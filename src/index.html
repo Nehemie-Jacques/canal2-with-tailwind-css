@@ -30,7 +30,56 @@
       }
     </style>
   </head>
-  <body class=" w-full overflow-x-hidden">  
+  <body class="w-full overflow-x-hidden">
+    <div class="h-[5rem] bg-(--secondary-color) lg:hidden"></div>
 
+    <header class="flex justify-between items-center p-[2rem] lg:px-[3rem]">
+      <div>
+        <img src="./img/premier-logo.svg" alt="img" />
+      </div>
+      <nav class="hidden lg:block">
+        <ul class="flex justify-between items-center list-none gap-[4rem]">
+          <li>
+            <a
+              href="#"
+              class="text-[2.4rem] text-(--primary-color) font-(--inter) font-[400] hover:text-(--secondary-color) hover:underline"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[2.4rem] text-(--primary-color) font-(--inter) font-[400] hover:text-(--secondary-color) hover:underline"
+              >Actualités</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[2.4rem] text-(--primary-color) font-(--inter) font-[400] hover:text-(--secondary-color) hover:underline"
+              >Programme</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[2.4rem] text-(--primary-color) font-(--inter) font-[400] hover:text-(--secondary-color) hover:underline"
+              >Direct</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="hidden lg:block lg:px-[5rem] lg:py-[2rem] lg:rounded-[3rem] lg:border lg:border-(--secondary-color) 
+        lg:bg-(--secondary-color) lg:text-(--white-color) lg:text-[2rem] lg:font-[700] lg:font-(--inter) lg:hover:bg-(--third-color) 
+        g:hover:transition-all lg:hover:duration-[500Ms] lg:hover:ease-in-out"
+      >
+        Premium
+      </button>
+
+      <div class="lg:hidden">
+        <img src="./img/menu 1.svg" alt="boutton menu" />
+      </div>
+    </header>
   </body>
 </html>
