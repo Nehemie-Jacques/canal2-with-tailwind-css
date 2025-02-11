@@ -1,0 +1,27 @@
+:root {
+    --inter: "Inter";
+    --IBM: "IBM Plex Sans Devanagari";
+    --open-sans: "Open Sans";
+    --primary-color: #000e01;
+    --secondary-color: #79ac78;
+    --white-color: #ffffff;
+    --third-color: #618264;
+    --text-color: #443434;
+    --font-size-h1: 4.3rem;
+    --font-size-p: 2.2rem;
+    --font-weight-h1: 600;
+    --font-weight-x: 400;
+    --font-weight-p: 400;
+}
+
+#nganou { 
+    background-image: linear-gradient(to bottom, #00000000,#000000F2), url(./img/francis-nganou.svg);
+}
+
+@media only screen and (min-width: 1024px) {
+    #barre{
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+}
+
