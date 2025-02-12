@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html class="text-[10px] overflow-x-hidden" lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Canal2 with tailwind</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./input.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <style type="text/tailwindcss">
-      @theme {
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canal2 with tailwind</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./input.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
         --inter: "Inter";
         --IBM: "IBM Plex Sans Devanagari";
         --open-sans: "Open Sans";
@@ -29,338 +29,195 @@
         --font-weight-p: 400;
       }
     </style>
-  </head>
-  <body class="w-full overflow-x-hidden">
-    <div class="h-[5rem] bg-(--secondary-color) lg:hidden"></div>
+</head>
 
-    <!-- !codage du header -->
+<body class="w-full overflow-x-hidden">
+  <div class="h-[5rem] bg-(--secondary-color) lg:hidden"></div>
 
-    <header class="flex justify-between items-center p-[2rem] lg:px-[3rem]">
-      <div>
-        <img src="./img/premier-logo.svg" alt="img" />
-      </div>
-      <nav class="hidden lg:block">
-        <ul class="flex justify-between items-center list-none gap-[4rem]">
-          <li>
-            <a
-              href="#"
-              class="text-[2.4rem] text-(--primary-color) font-(--inter) font-[400] hover:text-(--secondary-color) hover:underline"
-              >Accueil</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="text-[2.4rem] text-(--primary-color) font-(--inter) font-[400] hover:text-(--secondary-color) hover:underline"
-              >Actualités</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="text-[2.4rem] text-(--primary-color) font-(--inter) font-[400] hover:text-(--secondary-color) hover:underline"
-              >Programme</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="text-[2.4rem] text-(--primary-color) font-(--inter) font-[400] hover:text-(--secondary-color) hover:underline"
-              >Direct</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <button
-        class="hidden lg:block lg:px-[5rem] lg:py-[2rem] lg:rounded-[3rem] lg:border lg:border-(--secondary-color) lg:bg-(--secondary-color) lg:text-(--white-color) lg:text-[2rem] lg:font-[700] lg:font-(--inter) lg:hover:bg-(--third-color) g:hover:transition-all lg:hover:duration-[500Ms] lg:hover:ease-in-out"
-      >
-        Premium
-      </button>
+  <!-- !codage du header -->
 
-      <div class="lg:hidden">
-        <img src="./img/menu 1.svg" alt="boutton menu" />
-      </div>
-    </header>
+  <header class="flex justify-between items-center p-[2rem] lg:px-[3rem]">
+    <div>
+      <img src="./img/premier-logo.svg" alt="img" />
+    </div>
+    <nav class="hidden lg:block">
+      <ul class="flex justify-between items-center list-none gap-[4rem]">
+        <li>
+          <a href="#"
+            class="text-[2.4rem] text-(--primary-color) font-(--inter) font-[400] hover:text-(--secondary-color) hover:underline">Accueil</a>
+        </li>
+        <li>
+          <a href="#"
+            class="text-[2.4rem] text-(--primary-color) font-(--inter) font-[400] hover:text-(--secondary-color) hover:underline">Actualités</a>
+        </li>
+        <li>
+          <a href="#"
+            class="text-[2.4rem] text-(--primary-color) font-(--inter) font-[400] hover:text-(--secondary-color) hover:underline">Programme</a>
+        </li>
+        <li>
+          <a href="#"
+            class="text-[2.4rem] text-(--primary-color) font-(--inter) font-[400] hover:text-(--secondary-color) hover:underline">Direct</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      class="hidden lg:block lg:px-[5rem] lg:py-[2rem] lg:rounded-[3rem] lg:border lg:border-(--secondary-color) lg:bg-(--secondary-color) lg:text-(--white-color) lg:text-[2rem] lg:font-[700] lg:font-(--inter) lg:hover:bg-(--third-color) g:hover:transition-all lg:hover:duration-[500Ms] lg:hover:ease-in-out">
+      Premium
+    </button>
 
-    <!-- !codage de la hero section -->
+    <div class="lg:hidden">
+      <img src="./img/menu 1.svg" alt="boutton menu" />
+    </div>
+  </header>
 
-    <section class="flex w-full flex-col gap-[3rem] px-[2rem] pb-[5rem] lg:flex-row lg:px-[3rem]">
-      <div id="nganou" class="w-[95%]] h-[28rem] border-hidden bg-cover lg:flex-2 lg:h-[62.2rem] lg:rounded-[2rem]">
-        <div class="flex items-center gap-[1rem] pl-[1rem] pb-[1rem] pt-[20rem] lg:pt-[42rem] lg:pl-[3rem]">
-          <div class="w-[1rem] h-[6.7rem] bg-[#618264] lg:w-[1.5rem] lg:h-[14.2rem]"></div>
-          <div class="flex flex-col gap-[.5rem]">
-            <h1
-              class="font-[700] text-[1.8rem] font-[IBM Plex Sans Devanagari] text-white lg:text-[4rem]"
-            >
-              Il tape les gens pour vivre, françis <br> Nganou
-            </h1>
-            <p class="font-[400] text-[1.1rem] font-[IBM Plex Sans Devanagari] text-white lg:text-[2rem]">
-              Actu du 23 décembre 2023
-            </p>
-          </div>
+  <!-- !codage de la hero section -->
+
+  <section class="flex w-full flex-col gap-[3rem] px-[2rem] pb-[5rem] lg:flex-row lg:px-[3rem]">
+    <div id="nganou" class="w-[95%]] h-[28rem] border-hidden bg-cover lg:flex-2 lg:h-[62.2rem] lg:rounded-[2rem]">
+      <div class="flex items-center gap-[1rem] pl-[1rem] pb-[1rem] pt-[20rem] lg:pt-[42rem] lg:pl-[3rem]">
+        <div class="w-[1rem] h-[6.7rem] bg-[#618264] lg:w-[1.5rem] lg:h-[14.2rem]"></div>
+        <div class="flex flex-col gap-[.5rem]">
+          <h1 class="font-[700] text-[1.8rem] font-[IBM Plex Sans Devanagari] text-white lg:text-[4rem]">
+            Il tape les gens pour vivre, françis <br> Nganou
+          </h1>
+          <p class="font-[400] text-[1.1rem] font-[IBM Plex Sans Devanagari] text-white lg:text-[2rem]">
+            Actu du 23 décembre 2023
+          </p>
         </div>
       </div>
+    </div>
 
-      <div class="flex flex-col gap-5 lg:flex-1">
-        <div class="flex items-center gap-5">
-          <div class="w-[1rem] h-[3.1rem] bg-[#618264] lg:w-[1.3rem] lg:h-[5rem] lg:text-[2rem]"></div>
-          <h1  class="font-[600] text-[1.6rem] font-[IBM Plex Sans Devanagari]">A LA UNE DU JOUR</h1>
-        </div>
-        <div class="flex flex-col justify-between gap-[4rem] lg:gap-[5.5rem]">
-          <div class="flex gap-[4rem] lg:gap-[2rem]">
-            <img src="./img/enfant-ecole-primaire.svg" alt="" class="w-[17.5rem] h-[11.4rem] 
+    <div class="flex flex-col gap-5 lg:flex-1">
+      <div class="flex items-center gap-5">
+        <div class="w-[1rem] h-[3.1rem] bg-[#618264] lg:w-[1.3rem] lg:h-[5rem] lg:text-[2rem]"></div>
+        <h1 class="font-[600] text-[1.6rem] font-[IBM Plex Sans Devanagari]">A LA UNE DU JOUR</h1>
+      </div>
+      <div class="flex flex-col justify-between gap-[4rem] lg:gap-[5.5rem]">
+        <div class="flex gap-[4rem] lg:gap-[2rem]">
+          <img src="./img/enfant-ecole-primaire.svg" alt="" class="w-[17.5rem] h-[11.4rem] 
             lg:w-[21rem] lg:h-[15rem]">
-            <div class="flex flex-col justify-between">
-              <h1 class="font-[600] text-[1.6rem] font-[IBM Plex Sans Devanagari] lg:text-[2rem] lg:text-[1.4rem]">L’école primaire de melon dans le choc </h1>
-              <p class="font-[400] text-[1.2rem] font-[IBM Plex Sans Devanagari]">Lundi matin, le sous prefet du nyon-ekele est partie en visite dans son village natale ....</p>
-            </div>
-          </div>
-
-          <hr class="w-full h-[.1rem] lg:hidden">
-
-          <div class="flex gap-[4rem] lg:gap-[2rem]">
-            <img src="./img/manifestation.svg" alt="" class="w-[17.5rem] h-[11.4rem]  lg:w-[21rem] lg:h-[15rem]">
-            <div class="flex flex-col justify-between">
-              <h1 class="font-[600] text-[1.6rem] font-[IBM Plex Sans Devanagari] lg:text-[2rem]">Manifestations pour la baisse des prix</h1>
-              <p class="font-[400] text-[1.2rem] font-[IBM Plex Sans Devanagari] lg:text-[1.4rem]">Lundi matin, le sous prefet du nyon-ekele est partie en visite dans son village natale ....</p>
-            </div>
-          </div>
-
-          <hr class="w-full h-[.1rem] lg:hidden">
-
-          <div class="flex gap-[4rem] lg:gap-[2rem]">
-            <img src="./img/rond-point-etoile.svg" alt="" class="w-[17.5rem] h-[11.4rem]  lg:w-[21rem] lg:h-[15rem]">
-            <div class="flex flex-col justify-between">
-              <h1 class="font-[600] text-[1.6rem] font-[IBM Plex Sans Devanagari] lg:text-[2rem] lg:text-[1.4rem]">Bientot un métro dans la capitale </h1>
-              <p class="font-[400] text-[1.2rem] font-[IBM Plex Sans Devanagari]">Lundi matin, le sous prefet du nyon-ekele est partie en visite dans son village natale ....</p>
-            </div>
+          <div class="flex flex-col justify-between">
+            <h1 class="font-[600] text-[1.6rem] font-[IBM Plex Sans Devanagari] lg:text-[2rem] lg:text-[1.4rem]">L’école
+              primaire de melon dans le choc </h1>
+            <p class="font-[400] text-[1.2rem] font-[IBM Plex Sans Devanagari]">Lundi matin, le sous prefet du
+              nyon-ekele est partie en visite dans son village natale ....</p>
           </div>
         </div>
-        
-      </div>
-    </section>
 
-    <!-- !codage de la section informations -->
+        <hr class="w-full h-[.1rem] lg:hidden">
 
-    <section class="flex justify-around w-full gap-[5rem] px-[2rem] py-[4rem]">
-      <div class="flex justify--between flex-col gap-[.7rem]">
-        <div class="women-img">
-          <img src="./assets/img/femme-noir.svg" alt="une femme noir" class="w-30rem h-auto rounded-[1rem]"/>
+        <div class="flex gap-[4rem] lg:gap-[2rem]">
+          <img src="./img/manifestation.svg" alt="" class="w-[17.5rem] h-[11.4rem]  lg:w-[21rem] lg:h-[15rem]">
+          <div class="flex flex-col justify-between">
+            <h1 class="font-[600] text-[1.6rem] font-[IBM Plex Sans Devanagari] lg:text-[2rem]">Manifestations pour la
+              baisse des prix</h1>
+            <p class="font-[400] text-[1.2rem] font-[IBM Plex Sans Devanagari] lg:text-[1.4rem]">Lundi matin, le sous
+              prefet du nyon-ekele est partie en visite dans son village natale ....</p>
+          </div>
         </div>
-        <div class="flex flex-col gap-[1rem]">
-          <p class="text-[1.3rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)">Mardi , 10 Janvier 2025 10:30</p>
-          <h1 class="text-[2.4rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)"> Lutte contre le travail des <br />
-            enfants , l’UNESCO réagits</h1>
-        </div>
-      </div>
 
-      <div class="flex justify--between flex-col gap-[.7rem]">
-        <div class="women-img">
-          <img src="./assets/img/femme-noir.svg" alt="une femme noir" class="w-30rem h-auto rounded-[1rem]"/>
-        </div>
-        <div class="flex flex-col gap-[1rem]">
-          <p class="text-[1.3rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)">Mardi , 10 Janvier 2025 10:30</p>
-          <h1 class="text-[2.4rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)"> Lutte contre le travail des <br />
-            enfants , l’UNESCO réagits</h1>
-        </div>
-      </div>
+        <hr class="w-full h-[.1rem] lg:hidden">
 
-      <div class="flex justify--between flex-col gap-[.7rem]">
-        <div class="women-img">
-          <img src="./assets/img/femme-noir.svg" alt="une femme noir" class="w-30rem h-auto rounded-[1rem]"/>
-        </div>
-        <div class="flex flex-col gap-[1rem]">
-          <p class="text-[1.3rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)">Mardi , 10 Janvier 2025 10:30</p>
-          <h1 class="text-[2.4rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)"> Lutte contre le travail des <br />
-            enfants , l’UNESCO réagits</h1>
-        </div>
-      </div>
-    </section>
-
-    <!--!codage de la section martinez zogo  -->
-
-    <section
-      class="w-full flex flex-col items-center justify-center gap-[3rem] lg:py-[3rem]"
-    >
-      <h1
-        class="font-[IBM Plex Sans Devanagari] text-[2rem] font-[600] text-center lg:text-[4.8rem]"
-      >
-        Suivez l’atualité en direct sur Canal 2 International
-      </h1>
-      <div class="w-[80%] h-[20rem] lg:h-[62rem]">
-        <iframe
-          class="w-[100%] h-[100%]"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/KUTPD2G946o?si=LKv_XAJVpcHr-84c"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </section>
-
-    <!-- !codage de la section actualite -->
-
-    <section
-      class="flex w-full flex-col gap-[3rem] pt-[3rem] lg:pb-[8rem] lg:px-[3rem]"
-    >
-      <h1
-        class="font-[IBM Plex Sans Devanagari] text-[2rem] font-[600] text-center lg:text-[4.8rem]"
-      >
-        Retrouvez vos programmes préféré
-      </h1>
-      <div class="flex w-full flex-col gap-[3rem] px-[2rem] lg:flex-row">
-        <div class="flex-1 h-[25rem] lg:h-[30rem]">
-          <iframe
-            class="w-[100%] h-[22rem] lg:h-[30rem] lg:rounded-[2rem]"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/G9CvXDHegdo?si=Xrhlc-I5JY6jbxoQ"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="flex-1 flex flex-col gap-[2rem]">
-          <h1
-            class="font-[600] font-[IBM Plex Sans Devanagari] text-[3.2rem] text-[#618264] lg:text-[4.8rem]"
-          >
-            CANAL MATIN
-          </h1>
-          <p class="font-[400] text-[1.4rem] font-[open-sans] lg:text-[2.4rem]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud
-          </p>
-          <p class="font-[400] text-[1.4rem] font-[open-sans] lg:text-[2.4rem]">
-            Du Lundi au vendredi sur Canal 2 international
-          </p>
-
-          <div class="flex gap-8">
-            <a href="#">
-              <img src="./img/icons8-instagram.svg" alt="instagramme" />
-            </a>
-            <a href="#">
-              <img src="./img/icons8-facebook-nouveau.svg" alt="facebook" />
-            </a>
-            <a href="#">
-              <img src="./img/icons8-twitter.svg" alt="twitter" />
-            </a>
-            <a href="#">
-              <img src="./img/icons8-linkedin.svg" alt="linkedin" />
-            </a>
+        <div class="flex gap-[4rem] lg:gap-[2rem]">
+          <img src="./img/rond-point-etoile.svg" alt="" class="w-[17.5rem] h-[11.4rem]  lg:w-[21rem] lg:h-[15rem]">
+          <div class="flex flex-col justify-between">
+            <h1 class="font-[600] text-[1.6rem] font-[IBM Plex Sans Devanagari] lg:text-[2rem] lg:text-[1.4rem]">Bientot
+              un métro dans la capitale </h1>
+            <p class="font-[400] text-[1.2rem] font-[IBM Plex Sans Devanagari]">Lundi matin, le sous prefet du
+              nyon-ekele est partie en visite dans son village natale ....</p>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- !codage de la section news -->
+    </div>
+  </section>
 
-    <section
-      class="flex justify-center items-center gap-[3rem] px-[4rem] py-[2rem] overflow-x-scroll lg:overflow-hidden lg:justify-between lg:px-[3rem]"
-    >
-      <div class="flex flex-col justify-between">
-        <div class="flex items-center border border-[#D9D9D9] w-[34] h-[35]">
-          <img
-            src="./img/nous-chez-vous.svg"
-            alt="nous chez vous"
-            class="rounded-[1rem]"
-          />
-        </div>
+  <!-- !codage de la section informations -->
 
-        <div class="flex flex-col gap-[.5rem]">
-          <p
-            class="text-[1.3rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)"
-          >
-            DU LUNDI AU VENDREDI
-          </p>
-          <h1
-            class="text-[2.4rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)"
-          >
-            NOUS CHEZ VOUS
-          </h1>
-        </div>
+  <section class="flex justify-around w-full gap-[5rem] px-[2rem] py-[4rem]">
+    <div class="flex justify--between flex-col gap-[.7rem]">
+      <div class="women-img">
+        <img src="./img/travail-des-enfants.svg" alt="une femme noir" class="w-30rem h-auto rounded-[1rem]" />
       </div>
-
-      <div class="">
-        <img
-          src="./img/l'arene.svg"
-          alt="emission l'arènre"
-          class="w-[34] h-[35] rounded-[1rem]"
-        />
-        <div class="flex flex-col gap-[.5rem]">
-          <p
-            class="text-[1.3rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)"
-          >
-            DU LUNDI AU VENDREDI
-          </p>
-          <h1
-            class="text-[2.4rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)"
-          >
-            L’ARENE par Rodrigue Tongue
-          </h1>
-        </div>
+      <div class="flex flex-col gap-[1rem]">
+        <p class="text-[.7rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)">Mardi , 10
+          Janvier 2025 10:30</p>
+        <h1 class="text-[1.5rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)"> Lutte contre le travail
+          des <br />
+          enfants , l’UNESCO réagits</h1>
       </div>
+    </div>
 
-      <div class="">
-        <img
-          src="./img/comedie-presse.svg"
-          alt="uCOMEDIE PRESSr"
-          class="w-[34] h-[35] rounded-[1rem]"
-        />
-        <div class="flex flex-col gap-[.5rem]">
-          <p
-            class="text-[1.3rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)"
-          >
-            DU LUNDI AU VENDREDI
-          </p>
-          <h1
-            class="text-[2.4rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)"
-          >
-            COMEDIE PRESSE
-          </h1>
-        </div>
+    <div class="flex justify--between flex-col gap-[.7rem]">
+      <div class="women-img">
+        <img src="./img/presidentielle.svg" alt="une femme noir" class="w-30rem h-auto rounded-[1rem]" />
       </div>
-    </section>
+      <div class="flex flex-col gap-[1rem]">
+        <p class="text-[.7rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)">Mardi , 10
+          Janvier 2025 10:30</p>
+        <h1 class="text-[1.5rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)"> Lutte contre le travail
+          des <br />
+          enfants , l’UNESCO réagits</h1>
+      </div>
+    </div>
 
-    <!-- !codage de la section comment -->
+    <div class="flex justify--between flex-col gap-[.7rem]">
+      <div class="women-img">
+        <img src="./img/aboubakar.svg" alt="une femme noir" class="w-30rem h-auto rounded-[1rem]" />
+      </div>
+      <div class="flex flex-col gap-[1rem]">
+        <p class="text-[.7rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)">Mardi , 10
+          Janvier 2025 10:30</p>
+        <h1 class="text-[1.5rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)"> Lutte contre le travail
+          des <br />
+          enfants , l’UNESCO réagits</h1>
+      </div>
+    </div>
 
-    <section
-      class="flex flex-col w-full px-[2rem] lg:flex-row-reverse lg:px-[3rem] lg:py-[5rem] lg:items-center"
-    >
+
+  </section>
+
+  <!--!codage de la section martinez zogo  -->
+
+  <section class="w-full flex flex-col items-center justify-center gap-[3rem] lg:py-[3rem]">
+    <h1 class="font-[IBM Plex Sans Devanagari] text-[2rem] font-[600] text-center lg:text-[4.8rem]">
+      Suivez l’atualité en direct sur Canal 2 International
+    </h1>
+    <div class="w-[80%] h-[20rem] lg:h-[62rem]">
+      <iframe class="w-[100%] h-[100%]" width="560" height="315"
+        src="https://www.youtube.com/embed/KUTPD2G946o?si=LKv_XAJVpcHr-84c" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- !codage de la section actualite -->
+
+  <section class="flex w-full flex-col gap-[3rem] pt-[3rem] lg:pb-[8rem] lg:px-[3rem]">
+    <h1 class="font-[IBM Plex Sans Devanagari] text-[2rem] font-[600] text-center lg:text-[4.8rem]">
+      Retrouvez vos programmes préféré
+    </h1>
+    <div class="flex w-full flex-col gap-[3rem] px-[2rem] lg:flex-row">
       <div class="flex-1 h-[25rem] lg:h-[30rem]">
-        <iframe
-          class="w-[100%] h-[22rem] lg:h-[30rem] lg:rounded-[2rem]"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/RKC0H12VLCM?si=16-VO_vC5bZf873r"
-          title="YouTube video player"
+        <iframe class="w-[100%] h-[22rem] lg:h-[30rem] lg:rounded-[2rem]" width="560" height="315"
+          src="https://www.youtube.com/embed/G9CvXDHegdo?si=Xrhlc-I5JY6jbxoQ" title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
-
-      <div class="flex-1 flex flex-col gap-8 pt-8 lg:pt-[0rem]">
-        <h1
-          class="font-[600] font-[IBM Plex Sans Devanagari] text-[3.2rem] text-[#618264] lg:text-[4.8rem]"
-        >
-          c’est Comment
+      <div class="flex-1 flex flex-col gap-[2rem]">
+        <h1 class="font-[600] font-[IBM Plex Sans Devanagari] text-[3.2rem] text-[#618264] lg:text-[4.8rem]">
+          CANAL MATIN
         </h1>
         <p class="font-[400] text-[1.4rem] font-[open-sans] lg:text-[2.4rem]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud
         </p>
         <p class="font-[400] text-[1.4rem] font-[open-sans] lg:text-[2.4rem]">
           Du Lundi au vendredi sur Canal 2 international
         </p>
+
         <div class="flex gap-8">
           <a href="#">
             <img src="./img/icons8-instagram.svg" alt="instagramme" />
@@ -376,131 +233,170 @@
           </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- !codage de la section leader -->
+  <!-- !codage de la section news -->
 
-    <section
-      class="flex flex-col justify-between gap-[2rem] px-[2rem] pt-[3rem] lg:flex-row lg:[1.5rem] lg:w-full lg:items-center] lg:pb-[8rem]"
-    >
-      <div class="flex gap-8 items-center lg:gap-[4rem]" id="barre">
-        <div
-          class="h-[4rem] w-[1.3rem] bg-(--third-color) lg:h-[5rem] lg:w-[1.3rem]"
-        ></div>
-        <h1
-          class="font-(--font-weight-h1) text-[3.2rem] text-(--third-color) lg:text-[4rem]"
-        >
-          ESPACE PUBlICITÉ
+  <section
+    class="flex justify-center items-center gap-[3rem] px-[4rem] py-[2rem] overflow-x-scroll lg:overflow-hidden lg:justify-between lg:px-[3rem]">
+    <div class="flex flex-col justify-between">
+      <div class="h-[10rem] lg:h-[35rem]  border-gray-400 lg:w-[34rem] border flex justify-center items-center">
+        <div>
+          <img src="./img/nous-chez-vous.svg" alt="nous chez vous" class="rounded-[1rem]" />
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-[.5rem]">
+        <p class="text-[.7rem] lg:text-[.7rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)">
+          DU LUNDI AU VENDREDI
+        </p>
+        <h1 class="text-[1.5rem]  font-(--font-weight-h1) text-(--primary-color) font-(--IBM)">
+          NOUS CHEZ VOUS
         </h1>
-        <div
-          class="hidden lg:block lg:h-[5rem] lg:w-[1.2rem] lg:bg-(--third-color) lg:h-[5rem] lg:w-[1.3rem]"
-        ></div>
       </div>
-      <img src="./img/espace-pub.svg" alt="espace pub" />
-    </section>
+    </div>
 
-    <!-- !codage de la section women -->
-
-    <section
-      class="flex gap-[3rem] px-[4rem] py-[2rem] overflow-x-scroll lg:overflow-hidden lg:justify-between lg:px-[5rem]"
-    >
-      <div class="">
-        <img
-          src="./img/femme-noir.svg"
-          alt="une femme noir"
-          class="w-[34] h-[35] r rounded-[1rem]"
-        />
-        <div class="flex flex-col gap-[.5rem]">
-          <p
-            class="text-[1.3rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)"
-          >
-            Mardi , 10 Janvier 2025 10:30
-          </p>
-          <h1
-            class="text-[2.4rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)"
-          >
-            The standard Lorem Ipsum <br />passage, used since the 1500s
-          </h1>
-        </div>
+    <div class="class="flex flex-col justify-between"">
+      <img src="./img/l'arene.svg" alt="emission l'arènre" class="w-[34] h-[35] rounded-[1rem]" />
+      <div class="flex flex-col gap-[.5rem]">
+        <p class="text-[.7rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)">
+          DU LUNDI AU VENDREDI
+        </p>
+        <h1 class="text-[1.5rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)">
+          L’ARENE par Rodrigue Tongue
+        </h1>
       </div>
+    </div>
 
-      <div class="">
-        <img
-          src="./img/femme-noir.svg"
-          alt="une femme noir"
-          class="w-[34] h-[35] rounded-[1rem]"
-        />
-        <div class="flex flex-col gap-[.5rem]">
-          <p
-            class="text-[1.3rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)"
-          >
-            Mardi , 10 Janvier 2025 10:30
-          </p>
-          <h1
-            class="text-[2.4rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)"
-          >
-            The standard Lorem Ipsum <br />passage, used since the 1500s
-          </h1>
-        </div>
+    <div class="class="flex flex-col justify-between"">
+      <img src="./img/comedie-presse.svg" alt="uCOMEDIE PRESSr" class="w-[34] h-[35] rounded-[1rem]" />
+      <div class="flex flex-col gap-[.5rem]">
+        <p class="text-[.7rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)">
+          DU LUNDI AU VENDREDI
+        </p>
+        <h1 class="text-[1.5rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)">
+          COMEDIE PRESSE
+        </h1>
       </div>
+    </div>
+  </section>
 
-      <div class="">
-        <img
-          src="./img/femme-noir.svg"
-          alt="une femme noir"
-          class="w-[34] h-[35] rounded-[1rem]"
-        />
-        <div class="flex flex-col gap-[.5rem]">
-          <p
-            class="text-[1.3rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)"
-          >
-            Mardi , 10 Janvier 2025 10:30
-          </p>
-          <h1
-            class="text-[2.4rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)"
-          >
-            The standard Lorem Ipsum <br />passage, used since the 1500s
-          </h1>
-        </div>
+  <!-- !codage de la section comment -->
+
+  <section class="flex flex-col w-full px-[2rem] lg:flex-row-reverse lg:px-[3rem] lg:py-[5rem] lg:items-center">
+    <div class="flex-1 h-[25rem] lg:h-[30rem]">
+      <iframe class="w-[100%] h-[22rem] lg:h-[30rem] lg:rounded-[2rem]" width="560" height="315"
+        src="https://www.youtube.com/embed/RKC0H12VLCM?si=16-VO_vC5bZf873r" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="flex-1 flex flex-col gap-8 pt-8 lg:pt-[0rem]">
+      <h1 class="font-[600] font-[IBM Plex Sans Devanagari] text-[3.2rem] text-[#618264] lg:text-[4.8rem]">
+        c’est Comment
+      </h1>
+      <p class="font-[400] text-[1.4rem] font-[open-sans] lg:text-[2.4rem]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud
+      </p>
+      <p class="font-[400] text-[1.4rem] font-[open-sans] lg:text-[2.4rem]">
+        Du Lundi au vendredi sur Canal 2 international
+      </p>
+      <div class="flex gap-8">
+        <a href="#">
+          <img src="./img/icons8-instagram.svg" alt="instagramme" />
+        </a>
+        <a href="#">
+          <img src="./img/icons8-facebook-nouveau.svg" alt="facebook" />
+        </a>
+        <a href="#">
+          <img src="./img/icons8-twitter.svg" alt="twitter" />
+        </a>
+        <a href="#">
+          <img src="./img/icons8-linkedin.svg" alt="linkedin" />
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- !codage du footer -->
+  <!-- !codage de la section leader -->
 
-    <footer class="w-full bg-(--secondary-color)">
-      <div class="flex flex-col justify-center items-center w-full py-[5rem]">
-        <img src="./img/second-logo.svg" alt="" class="w-[40%] lg:w-auto" />
-        <div class="flex justify-between items-center gap-5">
-          <a href="#">
-            <img
-              src="./img/white instagram.svg"
-              alt="instagram"
-              class="w-[3rem] lg:w-auto"
-            />
-          </a>
-          <a href="#">
-            <img
-              src="./img/white facebook.svg"
-              alt="facebook"
-              class="w-[3rem] lg:w-auto"
-            />
-          </a>
-          <a href="#">
-            <img
-              src="./img/white twiter.svg"
-              alt="twiter"
-              class="w-[3rem] lg:w-auto"
-            />
-          </a>
-          <a href="#">
-            <img
-              src="./img/white linkedin.svg"
-              alt="linkedin"
-              class="w-[3rem] lg:w-auto"
-            />
-          </a>
-        </div>
+  <section
+    class="flex flex-col justify-between gap-[2rem] px-[2rem] pt-[3rem] lg:flex-row lg:[1.5rem] lg:w-full lg:items-center] lg:pb-[8rem]">
+    <div class="flex gap-8 items-center lg:gap-[4rem]" id="barre">
+      <div class="h-[4rem] w-[1.3rem] bg-(--third-color) lg:h-[5rem] lg:w-[1.3rem]"></div>
+      <h1 class="font-(--font-weight-h1) text-[3.2rem] text-(--third-color) lg:text-[4rem]">
+        ESPACE PUBlICITÉ
+      </h1>
+      <div class="hidden lg:block lg:h-[5rem] lg:w-[1.2rem] lg:bg-(--third-color) lg:h-[5rem] lg:w-[1.3rem]"></div>
+    </div>
+    <img src="./img/espace-pub.svg" alt="espace pub" />
+  </section>
+
+  <!-- !codage de la section women -->
+
+  <section
+    class="flex gap-[3rem] px-[4rem] py-[2rem] overflow-x-scroll lg:overflow-hidden lg:justify-between lg:px-[5rem]">
+    <div class="">
+      <img src="./img/femme-noir.svg" alt="une femme noir" class="w-[34] h-[35] r rounded-[1rem]" />
+      <div class="flex flex-col gap-[.5rem]">
+        <p class="text-[.7rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)">
+          Mardi , 10 Janvier 2025 10:30
+        </p>
+        <h1 class="text-[1.5rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)">
+          The standard Lorem Ipsum <br />passage, used since the 1500s
+        </h1>
       </div>
-    </footer>
-  </body>
+    </div>
+
+    <div class="">
+      <img src="./img/femme-noir.svg" alt="une femme noir" class="w-[34] h-[35] rounded-[1rem]" />
+      <div class="flex flex-col gap-[.5rem]">
+        <p class="text-[.7rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)">
+          Mardi , 10 Janvier 2025 10:30
+        </p>
+        <h1 class="text-[1.5rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)">
+          The standard Lorem Ipsum <br />passage, used since the 1500s
+        </h1>
+      </div>
+    </div>
+
+    <div class="">
+      <img src="./img/femme-noir.svg" alt="une femme noir" class="w-[34] h-[35] rounded-[1rem]" />
+      <div class="flex flex-col gap-[.5rem]">
+        <p class="text-[.7rem] text-(--secondary-color) italic font-(--font-weight-p) font-(--inter)">
+          Mardi , 10 Janvier 2025 10:30
+        </p>
+        <h1 class="text-[1.5rem] font-(--font-weight-h1) text-(--primary-color) font-(--IBM)">
+          The standard Lorem Ipsum <br />passage, used since the 1500s
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- !codage du footer -->
+
+  <footer class="w-full bg-(--secondary-color)">
+    <div class="flex flex-col justify-center items-center w-full py-[5rem]">
+      <img src="./img/second-logo.svg" alt="" class="w-[40%] lg:w-auto" />
+      <div class="flex justify-between items-center gap-5">
+        <a href="#">
+          <img src="./img/white instagram.svg" alt="instagram" class="w-[3rem] lg:w-auto" />
+        </a>
+        <a href="#">
+          <img src="./img/white facebook.svg" alt="facebook" class="w-[3rem] lg:w-auto" />
+        </a>
+        <a href="#">
+          <img src="./img/white twiter.svg" alt="twiter" class="w-[3rem] lg:w-auto" />
+        </a>
+        <a href="#">
+          <img src="./img/white linkedin.svg" alt="linkedin" class="w-[3rem] lg:w-auto" />
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
